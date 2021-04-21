@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Character Counter Using JS</title>
+    <style>
+        #main {
+            font-size: large;
+            text-decoration: underline;
+        }
+        /* body {
+            width: 100%;
+        }
+        
+        #text {
+            width: 100%;
+        } */
+        
+        #text {
+            border-color: black;
+            padding-left: 3px;
+        }
+        
+        #text:focus {
+            background-color: rgb(209, 209, 209);
+            border-color: rgb(106, 218, 247);
+        }
+        
+        #btn {
+            margin-top: 5px;
+            margin-left: 5px;
+            border-color: black;
+        }
+        
+        #btn:hover {
+            background-color: rgb(68, 67, 67);
+            color: white;
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        #xyz {
+            margin-top: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CHARACTER COUNTER</h1>
+    <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Type and click on the Count button!</h5>
+    <div id="xyz">
+        <input type="text" id="text">
+
+        <button id="btn" onclick="counter()">Count</button>
+        <p id="main"></p>
+    </div>
+    <footer>
+        <p>Developed by <a href="https://www.linkedin.com/in/abhishek-kumar-rabidas-428760166/" target="_blank">
+            Abhishek</a></p>
+    </footer>
+    <script>
+        function counter() {
+            let str = document.getElementById("text").value;
+            if (str != null) {
+                document.getElementById("main").innerHTML =
+                    "Number of characters: " + str.length;
+
+            }
+        }
+    </script>
+</body>
+
+</html>
